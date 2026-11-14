@@ -1,5 +1,5 @@
 // Copyright The Phorepoc Authors
-// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: AGPL-3.0-only
 
 // phepostsurf.mmp -- OURS: PostingSurfaceFactory.dll, the S60 Display Posting API for games that post frames (phecompat's package)
 TARGET			PostingSurfaceFactory.dll

@@ -1,5 +1,5 @@
 // Copyright The Phorepoc Authors
-// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: AGPL-3.0-only
 
 // phecompatimport.cpp -- OURS: reads the profiles that phecompat's package installs (\private\e7016e02\profiles\*.ini, one app
 // per file) and writes them into the profile repository (CenRep 0xE7016E00, key = the app's secure id, value = the profile bit

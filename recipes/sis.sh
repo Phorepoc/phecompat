@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Copyright The Phorepoc Authors
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-only
 #
 # sis.sh -- the pdk's package.yml runs it after the components: the phecompat SIS for PHOREPOC_ARCH
 # ($PHOREPOC_BUILD/sis/phecompat-<arch>.sis). It carries the profile importer (run once at install), the shipped
@@ -13,7 +13,7 @@ ARCH=${PHOREPOC_ARCH:-arm}
 case "$ARCH" in arm) AFL=--arm;; x32) AFL=;; *) echo "ARCH must be arm or x32 (got '$ARCH')"; exit 1;; esac
 : "${PHOREPOC_PDK:?set PHOREPOC_PDK}" "${PHOREPOC_BUILD:?set PHOREPOC_BUILD}"
 LIC=
-for f in "$HERE/LICENSES/Apache-2.0.txt" "$HERE/NOTICE"; do
+for f in "$HERE/LICENSE" "$HERE/NOTICE"; do
   b=$(basename "$f"); case $b in *.txt) ;; *) b=$b.txt;; esac
   LIC="$LIC --file $f=!:/resource/phecompat/$b"
 done

@@ -1,5 +1,5 @@
 // Copyright The Phorepoc Authors
-// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: AGPL-3.0-only
 
 // phecompatimport.mmp -- OURS: the profile importer (see phecompatimport.cpp); phecompat's package runs it once at install
 TARGET			phecompatimport.exe

@@ -1,5 +1,5 @@
 // Copyright The Phorepoc Authors
-// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: AGPL-3.0-only
 
 // phepostsurf.cpp -- OURS: PostingSurfaceFactory.dll, the S60 Display Posting API (the 2010 display_posting_api headers) for games
 // that post frames instead of drawing through a window of their own (the N-Gage runtime in posting mode). A posted frame is
