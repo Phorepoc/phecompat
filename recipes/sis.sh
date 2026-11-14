@@ -17,10 +17,10 @@ for f in "$HERE/LICENSES/Apache-2.0.txt" "$HERE/NOTICE"; do
   b=$(basename "$f"); case $b in *.txt) ;; *) b=$b.txt;; esac
   LIC="$LIC --file $f=!:/resource/phecompat/$b"
 done
-# --run-on-install: the importer runs when the install finishes (makesis FR,RI), so the profiles apply without a restart
+# --run-on-install: the importer runs when the install finishes (makesis FR,RA), so the profiles apply without a restart
 # shellcheck disable=SC2086
 python3 "$PHOREPOC_PDK/tools/make_sis.py" phecompat_import phepostsurf $AFL --unsigned \
   --uid 0xE7016E01 --version "${PHOREPOC_PACKAGE_VERSION:-0.1.0}" --name "phecompat" --vendor Phorepoc \
   --dir "$HERE/profiles=!:/private/e7016e02/profiles" $LIC \
-  --run-on-install '!:\sys\bin\phecompatimport.exe' \
+  --run-on-install '!:/sys/bin/phecompatimport.exe' \
   --out "$PHOREPOC_BUILD/sis/phecompat-$ARCH.sis"
