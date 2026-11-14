@@ -1,0 +1,14 @@
+// Copyright The Phorepoc Authors
+// SPDX-License-Identifier: Apache-2.0
+
+// phecompatimport.mmp -- OURS: the profile importer (see phecompatimport.cpp); phecompat's package runs it once at install
+TARGET			phecompatimport.exe
+TARGETTYPE		exe
+UID				0x1000007a 0xE7016E02
+CAPABILITY		WriteDeviceData ReadDeviceData
+VENDORID		0
+
+OS_LAYER_SYSTEMINCLUDE
+SOURCEPATH		.
+SOURCE			phecompatimport.cpp
+LIBRARY			euser.lib efsrv.lib centralrepository.lib

@@ -1,1 +1,1 @@
-Per-app compatibility profiles for older S60 apps.
+Lets older S60 games and apps run as they were made, per app, without changing them.
