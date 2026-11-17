@@ -1,0 +1,4 @@
+Manufacturer=Phorepoc
+Model=Phorepoc
+Product=S60_Emulator
+Revision=0001
